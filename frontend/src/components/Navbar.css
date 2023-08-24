@@ -1,0 +1,104 @@
+img{
+    width: 17%;
+    object-fit: contain;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    
+    box-shadow: 1px 5px 5px #e0dcdc;
+}
+
+ul{
+    display: flex;
+    align-items: baseline;
+    
+}
+
+
+li{
+    list-style: none;
+    padding: 1px 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.primaryBtn{
+    cursor: pointer;
+    font-weight: bolder;
+    padding: 13px 25px;
+    font-size: 0.8rem;
+    border: none;
+    color: black;
+    background: #EFEF1B;
+    border-radius: 15px;
+    margin-left: 20px;
+    transition: all 0.25s ease;
+}
+
+.primaryBtn:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px -10px linear-gradient(160deg, rgba(238,13,7,1) 1%, rgba(242,249,30,1) 48%, rgba(0,212,255,1) 100%);
+    /* border: 1px solid linear-gradient(160deg, rgba(238,13,7,1) 1%, rgba(242,249,30,1) 48%, rgba(0,212,255,1) 100%) */
+}
+
+
+/* //navbar li css :hover
+
+.profilecolor {
+    box-shadow: inset 0 0 0 0 yellow;
+    color: black;
+    margin: 0 1.70rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+  .profilecolor:hover {
+    box-shadow: inset 100px 0 0 0  yellow;
+    color: white;
+  }
+
+  .createpostecolor {
+    box-shadow: inset 0 0 0 0 blue;
+    color: black;
+    margin: 0 1.70rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+  .createpostcolor:hover {
+    box-shadow: inset 100px 0 0 0 blue;
+    color: white;
+  }
+
+  .followingcolor {
+    box-shadow: inset 0 0 0 0 red;
+    color: black;
+    margin: 0 1.70rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+  .followingcolor:hover {
+    box-shadow: inset 110px 0 0 0  red;
+    color: white;
+  } */
+
+.color:hover{
+    text-shadow: 0 0 3px yellow, 0 0 5px yellow;
+  }
+  .colorhover:hover{
+    text-shadow: 0 0 3px #0be6e2, 0 0 5px #0be6e2;
+  }
+  .colorhover1:hover{
+    text-shadow: 0 0 3px red, 0 0 5px red;
+  }
+
+  .signuphover:hover{
+    text-shadow: 0 0 3px #0be6e2, 0 0 5px #0be6e2;
+  }
+  .signinhover:hover{
+    text-shadow: 0 0 3px red, 0 0 5px red;
+  } 
