@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 export default function ProfilePic({ changeprofile }) {
   const hiddenFileInput = useRef(null);
@@ -41,7 +42,26 @@ export default function ProfilePic({ changeprofile }) {
       })
       .catch((err) => console.log(err));
   };
-
+  const handleStoryView = () => {
+    // Make a request to your backend to check if a story exists
+    fetch("http://localhost:5003/checkStory", {
+      method: "get",
+      headers: {
+        Authorization: "Bearer " + localStorage.getItem("jwt"),
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.storyExists) {
+          // Redirect to "Your Story" page
+          console.log("Story exists");
+        } else {
+          // Show "No Story" message
+          console.log("No story Found")
+        }
+      })
+      .catch((err) => console.log(err));
+  };
   const handleClick = () => {
     hiddenFileInput.current.click();
   };
@@ -79,6 +99,28 @@ export default function ProfilePic({ changeprofile }) {
               setImage(e.target.files[0]);
             }}
           />
+        </div>
+        <div style={{ borderTop: "1px solid #00000030" }}>
+        <Link to="/createstory">
+          <button
+            className="upload-btn"
+            style={{ color: "#1EA1F7" }}
+            
+          >
+            Upload Story
+          </button>
+          </Link>
+        </div>
+        <div style={{ borderTop: "1px solid #00000030" }}>
+        
+          <button
+            className="upload-btn"
+            style={{ color: "#1EA1F7" }}
+            onClick={handleStoryView()}
+          >
+            View Story
+          </button>
+         
         </div>
         <div style={{ borderTop: "1px solid #00000030" }}>
           <button className="upload-btn" style={{ color: "#ED4956" }}>
