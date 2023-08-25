@@ -1,4 +1,4 @@
-![CodeShare (1) (1)](https://github.com/mukulgoel435/SnapStream/assets/74229925/982ae25c-8ba1-4b93-873e-d2121c665700)
+![logo1](https://github.com/mukulgoel435/SnapStream/assets/74229925/e725f78d-c03a-4040-be3a-11014afb21dc)
 
 
 # SnapStream: Social Media Platform
